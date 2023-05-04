@@ -1,0 +1,2173 @@
+a {
+	color: #fffcf7;
+	text-decoration: none;
+}
+
+.actif {
+	color: rgb(2, 173, 208);
+	text-decoration: underline;
+	transition-duration: 0.5s;
+}
+
+#a-propos-de-moi {
+	background-color: rgb(0, 23, 54);
+	height: 100%;
+}
+
+.a-propos-de-moi-container {
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity: 1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	.a-propos-de-moi-container.not-visible {
+		transform: translateX(200px);
+		opacity: 0;
+	}
+
+.a-propos-de-moi-container-description {
+	text-align: left;
+	width: 90%;
+	line-height: 1.35em;
+}
+
+	.a-propos-de-moi-container-description > p {
+		color: #dadada;
+		text-align: left;
+		margin-left: 40px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+	}
+
+.a-propos-de-moi-container-picture > img {
+	border-radius: 100px;
+	float: left;
+	width: 15%;
+	height: 15%;
+	margin-top: 10px;
+	margin-left: 40px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+.arrow-info-dowm {
+	text-align: center;
+}
+
+body {
+	height: 100%;
+	color: white;
+	background-color: rgb(0, 13, 30);
+	font-family: 'Open Sans', 'Trebuchet MS', Sans-Serif;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	overflow-x: hidden;
+}
+
+.blue {
+	color: rgb(2, 173, 208);
+}
+
+#big-title {
+	margin-top: 38%;
+	text-align: center;
+	font-size: 30px;
+}
+
+#big-title-info {
+	margin-top: 1%;
+	text-align: center;
+	font-size: 24px;
+}
+
+.children-content > img {
+	margin-top: 13%;
+	padding: 2px;
+	width: 200px;
+	height: 200px;
+}
+
+#contact {
+	background-color: rgb(86, 115, 154);
+	height: 100%;
+	padding-top: 40px !important;
+	padding-bottom: 40px !important;
+}
+/* 
+.contact-logo{
+    border:2px solid rgb(0, 23, 54);
+    border-radius:50%;
+    display: inline-block;
+    width:350px;
+    height:350px;
+} */
+
+.contact {
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity: 1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	.contact.not-visible {
+		transform: translateX(200px);
+		opacity: 0;
+	}
+
+.contact-container-animation {
+	background: transparent;
+	background-color: rgba(5, 42, 62, 1);
+	color: white;
+	font-family: 'Open Sans', 'Trebuchet MS', Sans-Serif;
+	font-weight: bold;
+	width: 100%;
+	height: 20px;
+	overflow: hidden;
+	perspective-origin: center left;
+}
+
+.contact-cube-left {
+	display: inline-block;
+	width: 20%;
+	margin-left: -14.5%;
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity: 1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	.contact-cube-left.not-visible {
+		transform: translateX(200px);
+		opacity: 0;
+	}
+
+.contact-logo {
+	display: inline-block;
+	width: 30%;
+	margin-left: 23%;
+}
+
+.contact-cube-right {
+	display: inline-block;
+	width: 20%;
+	margin-left: 20%;
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity: 1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	.contact-cube-right.not-visible {
+		transform: translateX(200px);
+		opacity: 0;
+	}
+
+.contact-info {
+	text-align: center;
+}
+
+.container-content {
+	display: flex;
+	flex-wrap: wrap;
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity: 1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	.container-content.not-visible {
+		transform: translateX(200px);
+		opacity: 0;
+	}
+
+	.container-content > div {
+		flex: 0 30%;
+		box-sizing: border-box;
+		margin: 0 15px 30px 15px;
+	}
+
+.container-content-quality {
+	display: flex;
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity: 1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	.container-content-quality.not-visible {
+		transform: translateX(200px);
+		opacity: 0;
+	}
+
+	.container-content-quality > div {
+		flex: 0 30%;
+		box-sizing: border-box;
+		margin: 0 15px 30px 15px;
+	}
+
+/*** tuiles pour les compétences techniques ****/
+
+.children-content {
+	width: 100%;
+	height: 380px;
+	text-align: left;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	transition-duration: 0.8s;
+	padding: 10px;
+}
+
+	.children-content > p {
+		color: #dadada;
+		text-align: left;
+		margin-left: 40px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 15px;
+	}
+
+.children-content-clicked {
+	cursor: pointer;
+}
+
+.children-content-summary {
+	display: block;
+	height: 120px;
+}
+
+	.children-content-summary > ul > li {
+		color: #dadada;
+		text-align: left;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		list-style-type: none;
+		line-height: 1.4em;
+	}
+
+#children-content-picture {
+	text-align: center;
+}
+
+/***** Test animation bordure ****/
+
+.children-content:hover {
+	animation: border-skills-animate 0.8s linear forwards;
+	cursor: pointer;
+}
+
+@keyframes border-skills-animate {
+	0% {
+		width: 100%;
+		height: 380px;
+		border-top-color: transparent;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+		border-right-color: transparent;
+	}
+
+	10% {
+		width: 100%;
+		height: 380px;
+		border-top-color: #2c7ef1;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+		border-right-color: transparent;
+		border-width: 2px;
+	}
+
+	20% {
+		width: 100%;
+		height: 380px;
+		border-top-color: #2c7ef1;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+		border-right-color: #2c7ef1;
+		border-width: 2px;
+	}
+
+	30% {
+		width: 100%;
+		height: 380px;
+		border-top-color: #2c7ef1;
+		border-bottom-color: #2c7ef1;
+		border-left-color: transparent;
+		border-right-color: #2c7ef1;
+		border-width: 2px;
+	}
+
+	40% {
+		width: 100%;
+		height: 380px;
+		background-color: rgb(0, 23, 54);
+		border-top-color: #2c7ef1;
+		border-bottom-color: #2c7ef1;
+		border-left-color: #2c7ef1;
+		border-right-color: #2c7ef1;
+		border-width: 2px;
+	}
+
+	100% {
+		width: 100%;
+		height: 380px;
+		background-color: rgb(0, 23, 54);
+		border-top-color: #2c7ef1;
+		border-bottom-color: #2c7ef1;
+		border-left-color: #2c7ef1;
+		border-right-color: #2c7ef1;
+		border-width: 2px;
+	}
+}
+
+/***** Fin test animation bordure ****/
+
+/*** tuiles pour les qualités humaines ****/
+
+.children-content-quality {
+	width: 100%;
+	height: 300px;
+	text-align: left;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	transition-duration: 0.8s;
+	padding: 10px;
+	font-size: 14px;
+}
+
+	.children-content-quality > p {
+		color: #dadada;
+		text-align: left;
+		margin-left: 40px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 15px;
+	}
+
+.children-content-quality-clicked {
+	cursor: pointer;
+}
+
+.children-content-quality-summary {
+	display: block;
+	height: 120px;
+}
+
+	.children-content-quality-summary > ul > li {
+		color: #dadada;
+		text-align: left;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		list-style-type: none;
+		line-height: 1.4em;
+	}
+
+#children-content-quality-picture {
+	text-align: center;
+}
+
+/***** Test animation bordure ****/
+
+.children-content-quality:hover {
+	animation: border-quality-animate 0.8s linear forwards;
+	cursor: pointer;
+}
+
+@keyframes border-quality-animate {
+	0% {
+		width: 100%;
+		height: 300px;
+		border-top-color: transparent;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+		border-right-color: transparent;
+	}
+
+	10% {
+		width: 100%;
+		height: 300px;
+		border-top-color: #2c7ef1;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+		border-right-color: transparent;
+		border-width: 2px;
+	}
+
+	20% {
+		width: 100%;
+		height: 300px;
+		border-top-color: #2c7ef1;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+		border-right-color: #2c7ef1;
+		border-width: 2px;
+	}
+
+	30% {
+		width: 100%;
+		height: 300px;
+		border-top-color: #2c7ef1;
+		border-bottom-color: #2c7ef1;
+		border-left-color: transparent;
+		border-right-color: #2c7ef1;
+		border-width: 2px;
+	}
+
+	40% {
+		background-color: rgb(0, 13, 30);
+		width: 100%;
+		height: 300px;
+		border-top-color: #2c7ef1;
+		border-bottom-color: #2c7ef1;
+		border-left-color: #2c7ef1;
+		border-right-color: #2c7ef1;
+		border-width: 2px;
+	}
+
+	100% {
+		background-color: rgb(0, 13, 30);
+		width: 100%;
+		height: 300px;
+		border-top-color: #2c7ef1;
+		border-bottom-color: #2c7ef1;
+		border-left-color: #2c7ef1;
+		border-right-color: #2c7ef1;
+		border-width: 2px;
+	}
+}
+
+/***** Fin test animation bordure ****/
+
+.class-bloc {
+	min-width: 100%;
+	margin-bottom: 40px;
+}
+
+#container-code {
+	display: inline-block;
+	position: relative;
+	max-height: 80%;
+	text-align: left !important;
+}
+
+#container-logo {
+	width: 30%;
+	max-height: 80%;
+	padding-top: 10%;
+	padding-bottom: 5%;
+}
+
+.chantier {
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity: 1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+	.chantier.not-visible {
+		transform: translateX(200px);
+		opacity: 0;
+	}
+
+.description {
+	overflow: auto;
+	padding: 0 15px 50px 15px;
+	border-radius: 10px;
+}
+
+	.description > ul {
+		text-align: left;
+	}
+
+		.description > ul > li {
+			display: inline;
+			margin-right: 30px;
+			font-size: 14px;
+		}
+
+	.description > h3 {
+		font-weight: bold;
+		text-align: left;
+		color: white;
+		margin-left: 40px;
+		margin-bottom: 40px;
+		text-decoration: underline;
+	}
+
+	.description > h5 {
+		font-weight: bold;
+		text-align: left;
+		color: white;
+		margin-left: 40px;
+		font-size: 15px;
+		text-decoration: underline;
+	}
+
+	.description > p {
+		color: #dadada;
+		text-align: left;
+		margin-left: 40px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 15px;
+	}
+
+.descriptionLink {
+	margin-left: 20px;
+	list-style-type: disc;
+}
+
+.logo-deco {
+	background-color: #fffcf7;
+	width: 40px;
+}
+
+#logo {
+	border: 2px solid #039194;
+	border-radius: 50%;
+	display: inline-block;
+	width: 350px;
+	height: 350px;
+}
+
+.float-left {
+	float: left;
+}
+
+h2 {
+	font-size: 48px;
+}
+
+h3 {
+	font-weight: normal;
+	color: lightgrey;
+	margin-bottom: 80px;
+}
+
+h4 {
+	display: inline-block;
+	font-weight: bolder;
+	margin-left: 10px;
+	text-align: left;
+	font-size: 21px;
+	vertical-align: 20%;
+}
+
+#home {
+	max-height: 80% !important;
+}
+
+.indentation {
+	margin-left: 20px;
+}
+
+i {
+	display: inline-block;
+	color: rgb(2, 173, 208);
+}
+
+.infos-icons {
+	display: block;
+	width: 50px;
+	margin-left: 35.5%;
+	text-align: center;
+	line-height: 2.2em;
+}
+
+.infos-values > i {
+	display: inline-block;
+	color: rgb(0, 37, 44);
+}
+
+.infos-values > a {
+	color: lightgrey;
+	font-family: 'Open Sans', 'Trebuchet MS', Sans-Serif;
+	vertical-align: 20%;
+	transition-duration: 0.8s;
+}
+
+	.infos-values > a:hover {
+		font-weight: bold;
+		color: rgb(0, 37, 44);
+		transition-duration: 0.8s;
+	}
+
+.infos-values {
+	text-align: center;
+	padding-top: 12px;
+	padding-right: 20px;
+	line-height: 2.2em;
+	font-size: 14px;
+}
+
+.light-green {
+	color: #00bb7d;
+}
+
+#little-title {
+	font-size: 20px;
+	color: lightgrey;
+	text-align: center;
+}
+
+#little-title-info {
+	font-size: 13px;
+	color: lightgrey;
+	text-align: center;
+}
+
+.link {
+	position: relative;
+}
+
+	.link:after {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 3px;
+		display: block;
+		margin-top: 5px;
+		right: 0;
+		background: rgb(2, 173, 208);
+		transition: width .5s ease;
+		-webkit-transition: width .5s ease;
+	}
+
+	.link:hover {
+		cursor: pointer;
+	}
+
+		.link:hover:after {
+			width: 100%;
+			left: 0;
+			background: rgb(2, 173, 208);
+		}
+
+.link-clicked {
+	color: rgb(2, 173, 208);
+}
+
+	.link-clicked:after {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 3px;
+		display: block;
+		margin-top: 5px;
+		left: 0;
+		background: rgb(2, 173, 208);
+		transition: width .5s ease;
+		-webkit-transition: width .5s ease;
+	}
+
+.long-title {
+	font-size: 14px;
+	vertical-align: 40%;
+}
+
+#main > section {
+	position: relative;
+	padding: 80px 5% 100px 15%;
+	/* padding: 5% 2% 2% 15%; */
+	min-height: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.menu-description-link {
+	font-size: 21px;
+}
+
+.menu-quality-description {
+	display: inline-block;
+	text-align: left;
+	width: 20%;
+	vertical-align: top;
+}
+
+	.menu-quality-description > ul {
+		list-style-type: none;
+	}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-right: 40px;
+	width: 12%;
+	min-width: 180px;
+	height: 100%;
+	text-align: right;
+	z-index: 500;
+}
+
+	nav ul {
+		list-style: none;
+	}
+
+		nav ul > li {
+			color: #fffcf7;
+			padding-top: 20px;
+			letter-spacing: 1.5px;
+		}
+
+			nav ul > li.show {
+				opacity: 1;
+				transition: opacity 500ms;
+			}
+
+.picture-detailled-description-close {
+	cursor: pointer;
+}
+
+.picture-project {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
+	z-index: 0;
+}
+
+.picture-project-title {
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	z-index: 2;
+	height: 200px;
+	width: 200px;
+	text-align: center;
+}
+
+	.picture-project-title > p {
+		margin-top: 50%;
+		text-align: center;
+		color: rgba(255, 255, 255, 1);
+		font-weight: bold;
+		font-size: 16px;
+	}
+
+.picture-quality {
+	height: 115px;
+	width: 135px;
+	;
+	float: left;
+	margin-top: 10px;
+	margin-left: 40px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+}
+
+#project {
+	background-color: rgb(0, 23, 54);
+	height: 100%;
+}
+
+#projects-detailled-description {
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	overflow: scroll;
+	z-index: 600;
+}
+
+#project-detailled-description-close {
+	text-align: right;
+	padding: 10px;
+}
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
+#projects-detailled-description-confidentiality-container-description {
+	margin: 30px;
+	vertical-align: top;
+	text-align: left;
+}
+
+#projects-detailled-description-confidentiality-container-picture {
+	float: left;
+	width: 45%;
+	height: 100%;
+	margin: 30px;
+}
+
+#projects-detailled-description-confidentiality-picture {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+#projects-detailled-description-confidentiality-container-description > h5 {
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+#projects-detailled-description-confidentiality-container-description > p {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+#projects-detailled-description-confidentiality-container-description > ul {
+	font-size: 14px;
+	margin-left: 50%;
+}
+
+	#projects-detailled-description-confidentiality-container-description > ul > li {
+		margin-bottom: 14px;
+	}
+
+/*************** End Confidentiality Agreement Install CSS ******************/
+
+
+
+/*************** To Mini FrameWork Pop Formulaire CSS ******************/
+
+#projects-detailled-description-mini-framework-container-description {
+	margin: 30px;
+	vertical-align: top;
+	text-align: left;
+}
+
+#projects-detailled-description-mini-framework-container-picture {
+	float: left;
+	width: 45%;
+	height: 100%;
+	margin: 30px;
+}
+
+#projects-detailled-description-mini-framework-picture {
+	float: left;
+	width: 90%;
+	height: 90%;
+}
+
+#projects-detailled-description-mini-framework-container-description > h5 {
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+#projects-detailled-description-mini-framework-container-description > p {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+#projects-detailled-description-mini-framework-container-description > ul {
+	font-size: 14px;
+	margin-left: 50%;
+}
+
+	#projects-detailled-description-mini-framework-container-description > ul > li {
+		margin-bottom: 14px;
+	}
+
+/*************** End Mini FrameWork Pop Formulaire CSS ******************/
+
+
+/*************** To Dynamic SearchBar CSS ******************/
+
+#projects-detailled-description-searchBar-container-description {
+	margin: 30px;
+	vertical-align: top;
+	text-align: left;
+}
+
+#projects-detailled-description-dynamic-searchBar-container-picture {
+	float: left;
+	width: 45%;
+	height: 100%;
+	margin: 30px;
+}
+
+#projects-detailled-description-dynamic-searchBar-picture {
+	float: left;
+	width: 90%;
+	height: 90%;
+}
+
+#projects-detailled-description-searchBar-container-description > h5 {
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+#projects-detailled-description-searchBar-container-description > p {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+	#projects-detailled-description-searchBar-container-description > p > a {
+		color: rgb(2, 173, 208);
+		font-weight: bold;
+	}
+
+#projects-detailled-description-searchBar-container-description > ul {
+	font-size: 14px;
+	margin-left: 50%;
+}
+
+	#projects-detailled-description-searchBar-container-description > ul > li {
+		margin-bottom: 14px;
+	}
+
+/*************** End Dynamic SearchBar CSS ******************/
+
+/************* To Dynamic graphical Update Atrium CSS **************/
+
+#projects-detailled-description-graphic-maj-container-description {
+	display: inline-block;
+	width: 45%;
+	height: 100%;
+	margin: 30px;
+	vertical-align: top;
+}
+
+#projects-detailled-description-graphic-maj-container-picture {
+	display: inline-block;
+	width: 45%;
+	height: 100%;
+	margin: 30px;
+}
+
+#projects-detailled-description-graphic-maj-picture {
+	width: 85%;
+	height: 85%;
+}
+
+#projects-detailled-description-graphic-maj-container-description > h5 {
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+#projects-detailled-description-graphic-maj-container-description > p {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+	#projects-detailled-description-graphic-maj-container-description > p > a {
+		color: rgb(2, 173, 208);
+		font-weight: bold;
+	}
+
+#projects-detailled-description-graphic-maj-container-description > ul {
+	font-size: 14px;
+}
+
+	#projects-detailled-description-graphic-maj-container-description > ul > li {
+		margin-bottom: 14px;
+	}
+
+/************* End Create Fructos Project CSS *************/
+
+#projects-detailled-description-fructos-game-container-description {
+	margin: 30px;
+	vertical-align: top;
+	text-align: left;
+}
+
+#projects-detailled-description-fructos-game-container-picture {
+	float: left;
+	width: 45%;
+	height: 100%;
+	margin: 30px;
+}
+
+#projects-detailled-description-fructos-game-picture {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+#projects-detailled-description-fructos-game-container-description > h5 {
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+#projects-detailled-description-fructos-game-container-description > p {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+	#projects-detailled-description-fructos-game-container-description > p > a {
+		color: rgb(2, 173, 208);
+		font-weight: bold;
+	}
+
+#projects-detailled-description-fructos-game-container-description > ul {
+	font-size: 14px;
+	margin-left: 50%;
+}
+
+	#projects-detailled-description-fructos-game-container-description > ul > li {
+		margin-bottom: 14px;
+	}
+
+/************* To Create Fructos Project CSS **************/
+
+
+
+/************* End Dynamic graphical Update Atrium CSS *************/
+
+#quality {
+	background-color: rgb(0, 23, 54);
+}
+
+#quality-detailled-description-close {
+	text-align: right;
+	padding: 10px;
+}
+
+.red {
+	color: rgb(255, 148, 116);
+}
+
+.separation-line {
+	background-color: white;
+	color: white;
+}
+
+#skills {
+	background-color: rgb(0, 13, 30);
+}
+
+#skills-detailled-description {
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	overflow: scroll;
+	z-index: 600;
+}
+
+#skills-detailled-description-close {
+	cursor: pointer;
+	text-align: right;
+	padding: 10px;
+}
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
+#skills-detailled-description-design-web-container-description {
+	margin: 30px;
+	vertical-align: top;
+	text-align: left;
+}
+
+#skills-detailled-description-design-web-container-picture {
+	float: left;
+	width: 35%;
+	height: 100%;
+	margin: 30px;
+}
+
+#skills-detailled-description-design-web-picture {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+#skills-detailled-description-design-web-container-description > h5 {
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+#skills-detailled-description-design-web-container-description > p {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+#skills-detailled-description-design-web-container-description > ul {
+	font-size: 14px;
+	display: inline-block;
+}
+
+	#skills-detailled-description-design-web-container-description > ul > li {
+		margin-bottom: 14px;
+	}
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
+#skills-detailled-description-development-container-description {
+	margin: 30px;
+	vertical-align: top;
+	text-align: left;
+}
+
+#skills-detailled-description-development-container-picture {
+	float: left;
+	width: 35%;
+	height: 100%;
+	margin: 30px;
+}
+
+#skills-detailled-description-development-picture {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+#skills-detailled-description-development-container-description > h5 {
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+#skills-detailled-description-development-container-description > p {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+#skills-detailled-description-development-container-description > ul {
+	font-size: 14px;
+	display: inline-block;
+}
+
+	#skills-detailled-description-development-container-description > ul > li {
+		margin-bottom: 14px;
+	}
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
+#skills-detailled-description-bdd-container-description {
+	margin: 30px;
+	vertical-align: top;
+	text-align: left;
+}
+
+#skills-detailled-description-bdd-container-picture {
+	float: left;
+	width: 35%;
+	height: 100%;
+	margin: 30px;
+}
+
+#skills-detailled-description-bdd-picture {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+#skills-detailled-description-bdd-container-description > h5 {
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+#skills-detailled-description-bdd-container-description > p {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+#skills-detailled-description-bdd-container-description > ul {
+	font-size: 14px;
+	display: inline-block;
+}
+
+	#skills-detailled-description-bdd-container-description > ul > li {
+		margin-bottom: 14px;
+	}
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
+#skills-detailled-description-formation-container-description {
+	margin: 30px;
+	vertical-align: top;
+	text-align: left;
+}
+
+#skills-detailled-description-formation-container-picture {
+	float: left;
+	width: 35%;
+	height: 100%;
+	margin: 30px;
+}
+
+#skills-detailled-description-formation-picture {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+#skills-detailled-description-formation-container-description > h5 {
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+#skills-detailled-description-formation-container-description > p {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+#skills-detailled-description-formation-container-description > ul {
+	font-size: 14px;
+	display: inline-block;
+}
+
+	#skills-detailled-description-formation-container-description > ul > li {
+		margin-bottom: 14px;
+	}
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
+#skills-detailled-description-other-container-description {
+	margin: 30px;
+	vertical-align: top;
+	text-align: left;
+}
+
+#skills-detailled-description-other-container-picture {
+	float: left;
+	width: 35%;
+	height: 100%;
+	margin: 30px;
+}
+
+#skills-detailled-description-other-picture {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+#skills-detailled-description-other-container-description > h5 {
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+#skills-detailled-description-other-container-description > p {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+#skills-detailled-description-other-container-description > ul {
+	font-size: 14px;
+	display: inline-block;
+}
+
+	#skills-detailled-description-other-container-description > ul > li {
+		margin-bottom: 14px;
+	}
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
+#skills-detailled-description-project-container-description {
+	margin: 30px;
+	vertical-align: top;
+	text-align: left;
+}
+
+#skills-detailled-description-project-container-picture {
+	float: left;
+	width: 35%;
+	height: 100%;
+	margin: 30px;
+}
+
+#skills-detailled-description-project-picture {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+#skills-detailled-description-project-container-description > h5 {
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+#skills-detailled-description-project-container-description > p {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+#skills-detailled-description-project-container-description > ul {
+	font-size: 14px;
+	display: inline-block;
+}
+
+	#skills-detailled-description-project-container-description > ul > li {
+		margin-bottom: 14px;
+	}
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
+#skills-logo {
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.skills-picto {
+	max-width: 35px;
+	max-height: 35px;
+}
+
+.title-deco {
+	border: 1px #fffcf7 solid;
+	background-color: #fffcf7;
+	width: 10%;
+}
+
+/* CSS to owl carousel */
+
+/* #sync1 h5{
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#sync1 p{
+    font-size:14px;
+}
+
+#sync1 li{
+    list-style-type: none;
+    line-height: 1.7em;
+}
+
+#sync1 li:before{
+    content:"- ";
+}
+
+#sync1 .item {
+    background: rgb(0, 23, 54);
+    padding: 80px 0px;
+    margin: 5px;
+    color: #FFF;
+    border-radius: 3px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 330px;
+}
+#sync2 .item {
+    background: #C9C9C9;
+    padding: 10px 0px;
+    margin: 5px;
+    color: #FFF;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#sync2 .item h1 {
+    font-size: 18px;
+}
+
+#sync2 .current .item {
+    background: rgb(0, 23, 54);
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    transition: all 0.3s ease;
+}
+
+.owl-theme .owl-nav [class*='owl-'].disabled:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+#sync1.owl-theme {
+    position: relative;
+}
+
+#sync1.owl-theme .owl-next,
+#sync1.owl-theme .owl-prev {
+    width: 22px;
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+}
+
+#sync1.owl-theme .owl-prev {
+    left: 10px;
+}
+
+#sync1.owl-theme .owl-next {
+    right: 10px;
+} */
+
+/********************** Timeline ******************************/
+
+.timeline-container {
+	width: 80%;
+	padding: 50px 0;
+	margin: 50px auto;
+	position: relative;
+	overflow: hidden;
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity: 1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+	.timeline-container:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -1px;
+		width: 2px;
+		height: 100%;
+		background: #CCD1D9;
+		z-index: 1
+	}
+
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	.timeline-container.not-visible {
+		transform: translateX(100px);
+		opacity: 0;
+	}
+
+.timeline-block {
+	width: -webkit-calc(50% + 8px);
+	width: -moz-calc(50% + 8px);
+	width: calc(50% + 8px);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-moz-box-pack: justify;
+	justify-content: space-between;
+	clear: both;
+}
+
+.timeline-block-right {
+	float: right;
+}
+
+.timeline-block-left {
+	float: left;
+	direction: rtl
+}
+
+.marker {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	border: 2px solid #F5F7FA;
+	background: rgb(2, 173, 208);
+	margin-top: 10px;
+	z-index: 9999
+}
+
+.timeline-content {
+	width: 95%;
+	padding: 0 15px;
+	color: #666
+}
+
+	.timeline-content h3 {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 25px;
+		font-weight: 500
+	}
+
+	.timeline-content span {
+		font-size: 15px;
+		font-weight: bold;
+		/* color: #a4a4a4; */
+		color: rgb(2, 173, 208);
+		direction: ltr;
+		text-align: left;
+	}
+
+	.timeline-content p {
+		font-size: 14px;
+		line-height: 1.5em;
+		word-spacing: 1px;
+		/* color: #888; */
+		color: lightgrey;
+		direction: ltr;
+		text-align: center;
+	}
+
+.timeline-content-ajust {
+	margin-left: 27%;
+}
+
+@media screen and (max-width: 768px) {
+	.timeline-container:before {
+		left: 8px;
+		width: 2px;
+	}
+
+	.timeline-block {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.timeline-block-right {
+		float: none;
+	}
+
+	.timeline-block-left {
+		float: none;
+		direction: ltr;
+	}
+}
+
+/********************** End Tiles ******************************/
+
+
+
+
+/********************** Tiles ******************************/
+
+.description-tile {
+	text-align: left;
+}
+
+	.description-tile > h4, p {
+		margin: 0;
+	}
+
+	.description-tile > h4 {
+		margin-bottom: 10px;
+		font-size: 15px;
+	}
+
+.tiles {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity: 1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	.tiles.not-visible {
+		transform: translateX(200px);
+		opacity: 0;
+	}
+
+.tile {
+	flex: 1 15%;
+	text-decoration: none;
+	height: 200px;
+	background: red;
+	background-size: cover;
+	color: #FFF;
+	position: relative;
+	overflow: hidden;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+
+.description-tile {
+	box-sizing: border-box;
+	background: rgba(0,0,0,.6);
+	padding: 10px;
+	height: 200px;
+	width: 100%;
+	position: absolute;
+	transform: translateY(165px);
+	transition: all 300ms ease-in-out;
+}
+
+.tile:hover > .description-tile {
+	transform: translateY(0);
+	background: rgba(0,0,0,.6);
+	padding-top: 30px;
+}
+
+/********************** End Tiles ******************************/
+
+.title {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity: 1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	.title.not-visible {
+		transform: translateX(200px);
+		opacity: 0;
+	}
+
+.translate {
+	transform: translateX(900px);
+	transition-duration: 0.5s;
+}
+
+/********************** Tiles ******************************/
+
+/* 
+@media screen and (max-width:700px) {
+    .tile {
+        flex: 1 1 100%;
+    }
+} */
+
+/********************** End Tiles ******************************/
+
+@media screen and (max-width: 1500px) {
+	.menu-description-link {
+		font-size: 15px;
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	.menu-description-link {
+		font-size: 10px;
+	}
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1350px) {
+	.container-content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+		.container-content > div {
+			flex: 0 45%;
+			box-sizing: border-box;
+		}
+
+	.children-content {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.container-content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+		.container-content > div {
+			flex: 0 95%;
+			box-sizing: border-box;
+		}
+
+	.children-content {
+		width: 100%;
+	}
+
+	.tile {
+		flex: 1 1 100%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.description > ul > li {
+		display: block;
+	}
+}
+
+/********************** Responsive adapation tablet ******************************/
+
+@media screen and (min-width: 751px) and (max-width: 1250px) {
+
+	.class-bloc {
+		min-width: 100%;
+		margin-bottom: 40px;
+		margin-left: 15%;
+	}
+
+	.contact-cube-left {
+		display: none;
+		width: 20%;
+		margin-left: -14.5%;
+		transform: translateX(0);
+		opacity: 1;
+		transition: transform 0.9s, opacity 0.9s;
+	}
+
+	.contact-cube-right {
+		display: none;
+		width: 20%;
+		margin-left: 20%;
+		transform: translateX(0);
+		opacity: 1;
+		transition: transform 0.9s, opacity 0.9s;
+	}
+
+	#contact {
+		background-color: rgb(86, 115, 154);
+		height: 100%;
+		padding-top: 40px !important;
+		padding-bottom: 40px !important;
+		margin-left: -15%;
+	}
+
+	.contact-logo {
+		display: inline-block;
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.container-content-quality {
+		display: flex;
+		flex-wrap: wrap;
+		transform: translateX(0);
+		opacity: 1;
+		transition: transform 0.9s, opacity 0.9s;
+	}
+
+		.container-content-quality > div {
+			flex: 0 40%;
+			box-sizing: border-box;
+			margin: 0 15px 0px 15px;
+		}
+
+	.description > ul > li {
+		display: inline;
+		margin-right: 10px;
+		font-size: 10px;
+	}
+
+	#container-logo {
+		width: 30%;
+		max-height: 80%;
+		padding-top: 10%;
+		padding-bottom: 5%;
+		padding-left: 25%;
+	}
+
+	h4 {
+		display: inline-block;
+		font-weight: bolder;
+		margin-left: 10px;
+		text-align: left;
+		font-size: 16px;
+		vertical-align: 20%;
+	}
+
+	#main > section {
+		position: relative;
+		padding: 80px 5% 100px 25%;
+		min-height: 100%;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	.material-icons {
+		font-family: 'Material Icons';
+		font-weight: normal;
+		font-style: normal;
+		font-size: 12px;
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: none;
+		display: inline-block;
+		white-space: nowrap;
+		word-wrap: normal;
+		direction: ltr;
+		-webkit-font-feature-settings: 'liga';
+		-webkit-font-smoothing: antialiased;
+	}
+
+	#projects-detailled-description-confidentiality-container-description > ul {
+		font-size: 14px;
+		margin-left: 0%;
+	}
+
+	#projects-detailled-description-confidentiality-container-picture {
+		float: left;
+		width: 90%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#projects-detailled-description-dynamic-searchBar-container-picture {
+		float: left;
+		width: 90%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#projects-detailled-description-fructos-game-container-description > ul {
+		font-size: 14px;
+		margin-left: 0%;
+	}
+
+	#projects-detailled-description-fructos-game-container-picture {
+		float: left;
+		width: 90%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#projects-detailled-description-graphic-maj-container-picture {
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#projects-detailled-description-graphic-maj-container-description {
+		display: inline-block;
+		width: 90%;
+		height: 100%;
+		margin: 30px;
+		vertical-align: top;
+	}
+
+	#projects-detailled-description-searchBar-container-description > ul {
+		font-size: 14px;
+		margin-left: 0%;
+	}
+
+	#projects-detailled-description-mini-framework-container-picture {
+		float: left;
+		width: 100%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#projects-detailled-description-mini-framework-container-description > ul {
+		font-size: 14px;
+		margin-left: 0%;
+	}
+
+	#skills-detailled-description-bdd-container-picture {
+		float: left;
+		width: 90%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#skills-detailled-description-design-web-container-picture {
+		float: left;
+		width: 90%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#skills-detailled-description-development-container-picture {
+		float: left;
+		width: 90%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#skills-detailled-description-formation-container-picture {
+		float: left;
+		width: 90%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#skills-detailled-description-other-container-picture {
+		float: left;
+		width: 90%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#skills-detailled-description-project-container-picture {
+		float: left;
+		width: 90%;
+		height: 100%;
+		margin: 30px;
+	}
+}
+
+/********************** End Responsive adapation tablet ******************************/
+
+
+/********************** Responsive adapation smartphone ******************************/
+
+/* by default */
+
+.smarthpone-navigation {
+	display: none;
+}
+
+@media screen and (max-width: 750px) {
+
+	.a-propos-de-moi-container-picture > img {
+		float: left;
+		width: 75%;
+		height: 15%;
+	}
+
+	.contact-cube-left {
+		display: none;
+		width: 20%;
+		margin-left: -14.5%;
+		transform: translateX(0);
+		opacity: 1;
+		transition: transform 0.9s, opacity 0.9s;
+	}
+
+	.contact-cube-right {
+		display: none;
+		width: 20%;
+		margin-left: 20%;
+		transform: translateX(0);
+		opacity: 1;
+		transition: transform 0.9s, opacity 0.9s;
+	}
+
+	.contact-logo {
+		display: inline-block;
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.container-content-quality {
+		display: flex;
+		flex-wrap: wrap;
+		transform: translateX(0);
+		opacity: 1;
+		transition: transform 0.9s, opacity 0.9s;
+	}
+
+		.container-content-quality > div {
+			flex: 0 100%;
+			box-sizing: border-box;
+			margin: 0 15px 0 15px;
+		}
+
+	.description > h5 {
+		font-weight: bold;
+		text-align: left;
+		color: white;
+		margin-left: 40px;
+		font-size: 12px;
+		text-decoration: underline;
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+
+	h4 {
+		display: inline-block;
+		font-weight: bolder;
+		margin-left: 10px;
+		text-align: left;
+		font-size: 15px;
+		vertical-align: 20%;
+	}
+
+	.smarthpone-actif {
+		transition-duration: 0.1s;
+		color: rgb(2, 173, 208) !important;
+	}
+
+	#container-logo {
+		width: 30%;
+		max-height: 80%;
+		padding-top: 10%;
+		padding-bottom: 20%;
+	}
+
+	#logo {
+		border: 2px solid #039194;
+		border-radius: 50%;
+		display: inline-block;
+		width: 300px;
+		height: 300px;
+	}
+
+	#main > section {
+		position: relative;
+		padding: 80px 5% 100px 10%;
+		min-height: 100%;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	.material-icons-smartphone {
+		font-size: 24px;
+		color: white;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	nav {
+		position: fixed;
+		top: 40px;
+		left: 0;
+		width: 100%;
+		min-width: 180px;
+		height: 50%;
+		text-align: center;
+		z-index: 500;
+	}
+
+		nav ul > li {
+			color: #fffcf7;
+			padding-top: 10px;
+			letter-spacing: 1.5px;
+			border-color: white;
+			border-style: solid;
+			border-width: 1px 0;
+			background-color: black;
+			padding-bottom: 10px;
+		}
+
+		nav ul {
+			list-style: none;
+			padding-left: 0px;
+			margin: 0;
+		}
+
+	.navigation {
+		display: none;
+	}
+
+	.picture-quality {
+		height: 220px;
+		width: 220px;
+		float: left;
+		margin-top: 10px;
+		margin-left: 40px;
+		margin-right: 15px;
+		margin-bottom: 15px;
+		border-radius: 10px;
+	}
+
+	#projects-detailled-description-confidentiality-container-picture {
+		float: left;
+		width: 80%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#projects-detailled-description-confidentiality-container-description > ul {
+		font-size: 14px;
+		margin-left: 0%;
+	}
+
+	#projects-detailled-description-dynamic-searchBar-container-picture {
+		float: left;
+		width: 90%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#projects-detailled-description-searchBar-container-description > ul {
+		font-size: 14px;
+		margin-left: 0%;
+	}
+
+	#projects-detailled-description-fructos-game-container-picture {
+		float: left;
+		width: 80%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#projects-detailled-description-fructos-game-container-description > ul {
+		font-size: 14px;
+		margin-left: 0%;
+	}
+
+	#projects-detailled-description-graphic-maj-container-picture {
+		display: inline-block;
+		width: 98%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#projects-detailled-description-graphic-maj-container-description {
+		display: inline-block;
+		width: 85%;
+		height: 100%;
+		margin: 30px;
+		vertical-align: top;
+	}
+
+	#projects-detailled-description-mini-framework-container-description > ul {
+		font-size: 14px;
+		margin-left: 0%;
+	}
+
+	#projects-detailled-description-mini-framework-container-picture {
+		float: left;
+		width: 90%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#skills-detailled-description-bdd-container-picture {
+		float: left;
+		width: 85%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#skills-detailled-description-design-web-container-picture {
+		float: left;
+		width: 85%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#skills-detailled-description-development-container-picture {
+		float: left;
+		width: 80%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#skills-detailled-description-formation-container-picture {
+		float: left;
+		width: 85%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#skills-detailled-description-other-container-picture {
+		float: left;
+		width: 85%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	#skills-detailled-description-project-container-picture {
+		float: left;
+		width: 85%;
+		height: 100%;
+		margin: 30px;
+	}
+
+	.smarthpone-navigation {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 40px;
+		background-color: black;
+		display: inline-block;
+		z-index: 500;
+		border-bottom: 1px white solid;
+	}
+
+		.smarthpone-navigation > p {
+			color: #fffcf7;
+			letter-spacing: 1.5px;
+			padding-bottom: 5px;
+			display: inline-block;
+			vertical-align: 35%;
+			margin-left: 15px;
+		}
+}
+
+/********************** End Responsive adapation smartphone ******************************/
