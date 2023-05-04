@@ -2,27 +2,28 @@
 <html>
 
 <head>
-  <!-- BASICS -->
-  <meta charset="utf-8">
-  <title>Aymeric Vigoureux</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="js/rs-plugin/css/settings.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen">
-  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700">
+    <!-- BASICS -->
+    <meta charset="utf-8">
+    <title>Aymeric Vigoureux</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="js/rs-plugin/css/settings.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700">
 
-  <link rel="stylesheet" href="css/style.css">
-  <!-- skin -->
-  <link rel="stylesheet" href="skin/default.css">
-  <!-- =======================================================
-    Theme Name: Vlava
-    Theme URL: https://bootstrapmade.com/vlava-free-bootstrap-one-page-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- skin -->
+    <link rel="stylesheet" href="skin/default.css">
+    <!-- =======================================================
+      Theme Name: Vlava
+      Theme URL: https://bootstrapmade.com/vlava-free-bootstrap-one-page-template/
+      Author: BootstrapMade.com
+      Author URL: https://bootstrapmade.com
+    ======================================================= -->
 
 </head>
 
@@ -42,7 +43,7 @@
                 <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
                     <li class="active"><a href="index.html">Accueil</a></li>
                     <li><a href="#section-about">Présentation</a></li>
-                    <li><a href="#section-works">Projet</a></li>
+                    <li><a href="#section-projects">Projet</a></li>
                     <li><a href="#section-contact">Me Contacter</a></li>
                 </ul>
             </div>
@@ -55,7 +56,7 @@
             <h2>Aymeric Vigoureux</h2>
             <h3>Développeur full stack</h3>
             <div>
-                <a href="#section-services" class="btn-get-started scrollto">Vous êtes prêt?</a>
+                <a href="#section-about" class="btn-get-started scrollto">Vous êtes prêt?</a>
             </div>
         </div>
     </section>
@@ -117,52 +118,67 @@
     </section>
     <!-- /about -->
     <!-- spacer section:testimonial -->
-    <section id="testimonials" class="section" data-stellar-background-ratio="0.5">
+    <section id="section-projects" class="section" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="align-center">
+                        <h2 class="color-white txt-shadow">Mes Projets</h2>
                         <div class="flexslider testimonials-slider">
                             <ul class="slides">
                                 <li>
                                     <div class="testimonial clearfix">
-                                        <div class="mar-bot20">
-                                            <!--<img alt="" src="img/testimonial/testimonial1.png" class="img-circle">-->
-                                        </div>
-                                        <i class="fa fa-quote-left fa-5x"></i>
-                                        <h5>
-                                            Nunc velit risus, dapibus non interdum quis, suscipit nec dolor. Vivamus tempor tempus mauris vitae fermentum. In vitae nulla lacus. Sed sagittis tortor vel arcu sollicitudin nec tincidunt metus suscipit.Nunc velit risus, dapibus non interdum.
-                                        </h5>
-                                        <br />
-                                        <span class="author">&mdash; SARAH DOE <a href="#">www.siteurl.com</a></span>
+                                        <a href="EPITA/index.html">
+                                            <div class="mar-bot20">
+                                                <img alt="" data-0="width:155px;" data-300=" width:120px;" src="img/testimonial/vaisseau-joueur.png" class="img-circle">
+                                            </div>
+                                            <i class="fa fa-quote-left fa-5x"></i>
+                                            <h3 class="color-white txt-shadow">
+                                                Last Spaceshipe Destroyeur
+                                            </h3>
+                                            <h5>
+                                                last spaceshipe destroyeur est un jeu d'un vaisseau spacial poursuivi par des petits vaisseaux qui doit survivre.<br />
+                                                Il a été mon premier jeux et c'est très agréable d'y jouer en duo.
+                                            </h5>
+                                            <br />
+                                        </a>
                                     </div>
                                 </li>
 
                                 <li>
-                                    <div class="testimonial clearfix">
+                                    <a href="#popupPopAmi" class="testimonial clearfix">
                                         <div class="mar-bot20">
                                             <!--<img alt="" src="img/testimonial/testimonial2.png" class="img-circle">-->
                                         </div>
                                         <i class="fa fa-quote-left fa-5x"></i>
+                                        <h3 class="color-white txt-shadow">
+                                            PopAmi, la recherche avancé en sql
+                                        </h3>
                                         <h5>
-                                            Nunc velit risus, dapibus non interdum quis, suscipit nec dolor. Vivamus tempor tempus mauris vitae fermentum. In vitae nulla lacus. Sed sagittis tortor vel arcu sollicitudin nec tincidunt metus suscipit.Nunc velit risus, dapibus non interdum.
+                                            Au Secours populaire j'ai du refaire la recherche avancé pour trouver une personne.
+                                            Un ami est le nom de toutes personne enregistré dans la base de donné du SPF.
+                                            La recherche existait déjà mais elle utilisait entity framwork et les performances étaient mauvaises à tel point que la requette plantai s'il y avait trop de paramètre.
+                                            On ponvait constater plus d'une centaine de requet à la BDD aulieu de une généralisé.
+                                            j'ai donc repris la page et j'ai créer une procedure stoqué en sql pour récupérer les informations des usagers.
+                                            Ce fu un success car une requet sur l'ansemble de la base prends moins de 5 secondes alors qu'il y a plus de 200 000 personnes
                                         </h5>
-                                        <br />
-                                        <span class="author">&mdash; NICOLE DOE <a href="#">www.siteurl.com</a></span>
-                                    </div>
+                                    </a>
                                 </li>
                                 <li>
-                                    <div class="testimonial clearfix">
+                                    <a href="#popupPopColecte" class="testimonial clearfix">
                                         <div class="mar-bot20">
                                             <!--<img alt="" src="img/testimonial/testimonial3.png" class="img-circle">-->
                                         </div>
                                         <i class="fa fa-quote-left fa-5x"></i>
+                                        <h3 class="color-white txt-shadow">
+                                            PopColect, Une loterie en ligne
+                                        </h3>
                                         <h5>
-                                            Nunc velit risus, dapibus non interdum quis, suscipit nec dolor. Vivamus tempor tempus mauris vitae fermentum. In vitae nulla lacus. Sed sagittis tortor vel arcu sollicitudin nec tincidunt metus suscipit.Nunc velit risus, dapibus non interdum.
+                                            Ce projet de loterie a été mon premier projet mené au Secours populaire.
+                                            J'ai fait une loterie en ligne pour permetre au Fédération de tiré leur lot en ligne et garder une trace pour l'état.
                                         </h5>
                                         <br />
-                                        <span class="author">&mdash; DASON KRUN <a href="#">www.siteurl.com</a></span>
-                                    </div>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -172,7 +188,53 @@
             </div>
         </div>
     </section>
+    <div class="popup" id="popupPopAmi">
+        <div class="popup__content">
+            <h2 class="heading-secondary">PopAmi, la recherche avancé en sql</h2>
+            <h3 class="heading-tertiary">Important &ndash; Je suis entrain d'écrire l'article</h3>
+            <p class="popup__text">
+                patientez s'il vous plait
+            </p>
+            <a href="#section-projects" class="button">Fermer</a>
+        </div>
+    </div>
+    <div class="popup" id="popupPopColecte">
+        <div class="popup__content">
+            <h2 class="heading-secondary">
+                Présentation du projet de la Loterie du secours populaire don’action
+            </h2>
+            <h3 class="heading-tertiary">I &ndash; Problématique de départ et enjeux.</h3>
+            <p class="popup__text">
+                Gros problème !!!!
+                La fameuse Loterie du secours populaire arrive et aucun service n’est disponible. Tous les sites sont entrain de vendre des tickets pour faire des tirages locaux mais le prestataire n’a pas développé d’application vite au boulot !
+                Ce projet est aussi l’occasion pour moi de me familiariser avec les technologies de la boite et d’avancé à mon rythme tout en étant suivi par mon maitre d’alternance. Effectivement je dois intégrer la solution au site du SPF (Secours Populaire Français) pour que toutes les fédérations puissent y avoir accès.
+            </p>
+            <h3 class="heading-tertiary">
+                II &ndash; Avant-projet et prototype du projet.
+            </h3>
+            <p class="popup__text">
+                Je commence le projet par une étude du projet avec un livrable pour bien comprendre les enjeux et les besoins dans le but de proposer un outil qui soit fonctionnel et esthétique. Les technologies me sont donc imposées car c’est celle du site déjà en place pour que l’intégration soit simple. C’est donc une technologie MVC (Model Vue Contrôleur) avec pour le contrôleur du C#, la base de données du SQL et pour le coté client du HTML, JS et CSS.
+                Une fois l’avant-projet validé je commence le prototype en partant de zéro pour bien comprendre l’architecture et proposé une première vision du projet et une structure de base établie. Cette étape est très importante car par la suite elle me permettra de naviguer plus facilement sur la solution du SPF. C’est assez satisfaisant de voir le tirage de la loterie tourné et célébrer un vainqueur mais s’il n’y a actuellement qu’un seul chiffre gagnant. Le prototype est validé et passe en production.
+            </p>
+            <h3 class="heading-tertiary">
+                III &ndash; L’intégration du projet sur la plateforme SPF
+            </h3>
+            <p class="popup__text">
+                C’est maintenant que les problèmes commencent car la plateforme du SPF est complexe… un vrai labyrinthe ! Heureusement, Yakian mon tuteur est là pour m’expliquer la structure du projet et m’orienter. Je commence ainsi à intégrer mon projet sur la plateforme et à développer des fonctionnalités en plus comme un drag & drop pour échanger des lots.
+                Le stresse commence à monter car le rendu approche et même si l’application est fonctionnelle je n’ai toujours pas les champs des tickets alors que je dois mettre en place un Reporting Services pour importer la liste des tickets de la base de données dans un Excel. Fort heureusement l’administration m’envoie la forme des tickets au dernier moment et le travail étant déjà anticipé l’intégration se fait rapidement. L’étape étant validé la face finale commence !
+            </p>
+            <h3 class="heading-tertiary">
+                IV &ndash; Livrable et résultats
+            </h3>
+            <p class="popup__text">
 
+                Yakian m’aide pour passer la solution qui est en locale sur le serveur teste qui est utilisé pour permettre aux utilisateurs de s’entrainer et de faire des retours sur l’application. C’est l’étape la plus satisfaisante car l’application est testée et les fruits du travail sont enfin visible.
+                Maintenant l’étape de mise en production sur le serveur prod va bientôt se lancer et on pourra avoir un retour sur les tirages des lots. Après viendra un retour sur le projet mais pour le moment il est plutôt positif et il m’a permis de me familiariser avec l’application ce qui était une étape obligée.
+
+            </p>
+            <a href="#section-projects" class="button">Fermer</a>
+        </div>
+    </div>
     <!-- services -->
     <section id="section-services" class="section pad-bot30 bg-white">
         <div class="container">
@@ -185,7 +247,7 @@
                         </div>
                     </div>
                     <h3 class="text-bold">ASP.NET</h3>
-                    <p>Lorem ipsum dolor sit amet, elit persecuti efficiendi sit ad.</p>
+                    <p>Les ancien sites du Secours populaire sont en ASP.NET</p>
 
                     <div class="clear"></div>
                 </div>
@@ -196,7 +258,7 @@
                             <a href="#" class="hi-icon hi-icon-list">list</a>
                         </div>
                     </div>
-                    <h3 class="text-bold">MVC</h3>
+                    <h3 class="text-bold">C# &ndash; MVC</h3>
                     <p>Langage de prédilection</p>
 
                     <div class="clear"></div>
@@ -223,7 +285,7 @@
                         </div>
                     </div>
                     <h3 class="text-bold">HTML</h3>
-                    <p>Lorem ipsum dolor sit amet, elit persecuti efficiendi sit ad.</p>
+                    <p>Pour les langages de Front j'ai codé plusieur site</p>
 
                     <div class="clear"></div>
                 </div>
@@ -235,7 +297,7 @@
                         </div>
                     </div>
                     <h3 class="text-bold">Java Script</h3>
-                    <p>Lorem ipsum dolor sit amet, elit persecuti efficiendi sit ad.</p>
+                    <p>J'ai eu plusieur projet en JS comme coder un démineur avec le DOM</p>
 
                     <div class="clear"></div>
                 </div>
@@ -247,7 +309,7 @@
                         </div>
                     </div>
                     <h3 class="text-bold">CSS</h3>
-                    <p>Lorem ipsum dolor sit amet, elit persecuti efficiendi sit ad.</p>
+                    <p>Même si je sais lire et coder la base, je suis un débutant.</p>
 
                     <div class="clear"></div>
                 </div>
@@ -258,7 +320,7 @@
 
     <!-- spacer section:stats -->
     <section id="parallax1" class="section" data-stellar-background-ratio="0.5">
-        
+
         <div class="align-center">
             <h2 class="color-white txt-shadow">COMPÉTENCES HUMAINES</h2>
         </div>
@@ -268,16 +330,16 @@
                 <div class="col-md-3">
                     <div class="align-center color-white txt-shadow">
                         <div class="icon">
-                            <i class="fa fa-users fa-5x"></i>
+                            <a href="#" class="fa fa-users fa-5x"></a>
                         </div>
                         <!--<strong id="counter-coffee" class="number">500</strong><br>-->
-                        <span class="text">Accueillant</span>
+                        <span class="text">Rassembleur</span>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="align-center color-white txt-shadow">
                         <div class="icon">
-                            <i class="fa fa-music fa-5x"></i>
+                            <a href="#" class="fa fa-music fa-5x"></a>
                         </div>
                         <!--<strong id="counter-music" class="number">345</strong><br>-->
                         <span class="text">à l'écoute</span>
@@ -286,19 +348,19 @@
                 <div class="col-md-3">
                     <div class="align-center color-white txt-shadow">
                         <div class="icon">
-                            <i class="fa fa-clock-o fa-5x"></i>
+                            <a href="#" class="fa fa-clock-o fa-5x"></a>
                         </div>
                         <!--<strong id="counter-clock" class="number">1235</strong><br>-->
-                        <span class="text">Prévoyant</span>
+                        <span class="text">Prévenant</span>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="align-center color-white txt-shadow">
                         <div class="icon">
-                            <i class="fa fa-beer fa-5x"></i>
+                            <a id="honnetete" href="#" class="fa fa-bell-o fa-5x"></a>
                         </div>
+                        <span for="honnetete" class="text">Honnêteté</span>
                         <!--<strong id="counter-heart" class="number">478</strong><br>-->
-                        <span class="text">Bon vivant</span>
                     </div>
                 </div>
             </div>
@@ -306,7 +368,7 @@
     </section>
 
     <!-- section works -->
-    <section id="section-works" class="section appear clearfix">
+    <!--<section id="section-works" class="section appear clearfix">
         <div class="container">
 
             <div class="row mar-bot40">
@@ -450,7 +512,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="row">
+                    <div class="row">-->
                         <!--<div class="col-sm-2 align-center">
                             <img alt="logo" src="img/clients/logo1.png">
                         </div>
@@ -473,17 +535,16 @@
                         <div class="col-sm-2 align-center">
                             <img alt="logo" src="img/clients/logo6.png">
                         </div>-->
-                    </div>
+                    <!--</div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- map -->
     <!--<section id="section-map" class="clearfix">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>-->
-
     <!-- contact -->
     <section id="section-contact" class="section appear clearfix">
         <div class="container">
