@@ -70,7 +70,6 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s;
-    overflow: auto;
 }
 
     .popup:target {
@@ -79,7 +78,7 @@ body {
     }
 
 .popup__content {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -94,9 +93,4 @@ body {
 .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
-}
-.textInPopup {
-    position: absolute;
-    top: 10%;
-    overflow: auto;
 }
