@@ -46,6 +46,12 @@ h5 { font-size: 16px; }
 .txt-bold { font-weight: 700; }
 .txt-uppercase { text-transform: uppercase; }
 
+.titleParcours {
+	font-style: italic;
+	font-size: small;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
 blockquote.bigquote {
 	border: none;
 	font-size: 48px;
