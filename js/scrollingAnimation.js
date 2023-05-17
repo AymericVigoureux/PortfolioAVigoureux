@@ -41,34 +41,3 @@ itemsContainerQuality.forEach(function(itemsContainerQuality){
 	itemsContainerQuality.classList.add('not-visible')
 	observer.observe(itemsContainerQuality)
 })
-
-// On le fait pour l'ensemble des items qui ont la classe a-propos-de-moi-container
-let itemAproposDeMoi = document.querySelector('.a-propos-de-moi-container')
-itemAproposDeMoi.classList.add('not-visible')
-
-observer.observe(document.querySelector('.a-propos-de-moi-container'))
-
-// On le fait pour l'ensemble des items qui ont la classe tiles
-let itemTiles = document.querySelector('.tiles')
-itemTiles.classList.add('not-visible')
-
-observer.observe(document.querySelector('.tiles'))
-
-// On le fait pour l'ensemble des items qui ont la classe container-timeline
-let itemTimelineContainer = document.querySelector('.timeline-container')
-itemTimelineContainer.classList.add('not-visible')
-
-observer.observe(document.querySelector('.timeline-container'))
-
-// On le fait pour l'ensemble des items qui ont la classe contact
-let itemcontact = document.querySelector('.contact')
-itemcontact.classList.add('not-visible')
-
-observer.observe(document.querySelector('.contact'))
-
-// On le fait pour l'ensemble des items qui ont la classe contact-cube-left
-let itemcontactCubeLeft = document.querySelector('.contact-cube-left')
-itemcontactCubeLeft.classList.add('not-visible')
-
-observer.observe(document.querySelector('.contact-cube-left'))
-

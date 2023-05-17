@@ -94,3 +94,30 @@ body {
     font-size: 1.4rem;
     margin-bottom: 4rem;
 }
+
+.flash-message {
+    color: #fff; /* Couleur du texte du flash message */
+    padding: 10px;
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    z-index: 9999;
+    border-radius: 5px;
+    display: none;
+    font-family: sans-serif;
+}
+#flash-message-success {
+    background-color: #4CAF50; 
+}
+
+#flash-message-error {
+    background-color: #FF0000;
+}
+
+#flash-message.show {
+    display: block;
+}
+
+    #flash-message p {
+        margin: 0;
+    }

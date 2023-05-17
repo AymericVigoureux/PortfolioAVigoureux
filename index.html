@@ -719,8 +719,6 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="cform" id="contact-form">
-                        <div id="sendmessage">Votre message a été envoyé. Merci!</div>
-                        <div id="errormessage">Une erreur est arrivé lors de l'envoie. Vous pouvez me contacter avec les liens en bas de page.</div>
                         <form id="mailClient" class="contactForm">
 
                             <div class="field your-name form-group">
@@ -752,6 +750,13 @@
             </div>
         </div>
     </section>
+
+    <div id="flash-message-success" class="hidden flash-message">
+        <p>Opération réussie !</p>
+    </div>
+    <div id="flash-message-error" class="hidden flash-message">
+        <p>Erreur !</p>
+    </div>
 
     <section id="footer" class="section footer">
         <div class="contact-container-animation">
@@ -816,10 +821,6 @@
     <script src="js/scrollingAnimation.js"></script>
     <script src="js/mail.js"></script>
 
-
-
-    <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
 
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
