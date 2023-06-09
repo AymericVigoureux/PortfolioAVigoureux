@@ -161,10 +161,10 @@
                                         <h5>
                                             Au Secours populaire j'ai du refaire la recherche avancé pour trouver une personne.
                                             Un ami caractérise de toute personne enregistrée dans la base de données du SPF.
-                                            La recherche existait déjà mais elle utilisait entity framwork dont performances étaient mauvaises à tel point que la requête plantait s'il y avait trop de paramètre.
+                                            La recherche existait déjà mais elle utilisait entity framwork dont performances étaient mauvaises à tel point que la requête n'aboutissait pas s'il y avait trop de paramètre.
                                             On ponvait constater plus d'une centaine de requêtes à la BDD au lieu d'une généralisé.
                                             J'ai donc repris la page et j'ai créer une procédure stoquée en SQL pour récupérer les informations des usagers.
-                                            Ce fut un succès car une requête sur l'ensemble de la base prends moins de 5 secondes alors qu'il y a plus de 200 000 personnes
+                                            Quelle solution ai-je trouvée pour requêter une base de données avec plus de 200 000 personnes ?
                                         </h5>
                                     </a>
                                 </li>
@@ -195,9 +195,49 @@
     <div class="popup" id="popupPopAmi">
         <div class="popup__content">
             <h2 class="heading-secondary">PopAmi, la recherche avancé en sql</h2>
-            <h3 class="heading-tertiary">Important &ndash; Je suis entrain d'écrire l'article</h3>
+            <h3 class="heading-tertiary">I &ndash;La problématiquee</h3>
             <p class="popup__text">
-                patientez s'il vous plait
+                Sur le site du Secours populaire Français (SPF), Atrium, la recherche avancée permet de retrouver tous les «amis », c’est à dire toute personne enregistrée sur la Base De Données (BDD) du SPF.
+                Mais cette recherche est lente et il lui arrive même de ne pas aboutir.
+                Mon travail va être de reprendre ce code qui est au cœur même d’Atrium pour proposer une solution plus performante.
+                Quelle solution ai-je trouvée pour requêter une base de données avec plus de 200 000 personnes ?
+                Après avoir posé sur un plan la stratégie de codage, une solution s’est imposée.
+            </p>
+            <h3 class="heading-tertiary">II &ndash;Les enjeux et problèmes</h3>
+            <p class="popup__text">
+                Pourquoi une recherche avancée ?
+                Cette recherche comporte plusieurs paramètres : des paramètres classiques comme nom, prénom, âge, etc mais aussi des paramètres plus poussés comme la recherche par ville ou par langue parlée.
+                La recherche a ainsi une vingtaine de champs qui peuvent se recouper lors du calcul.
+                Il va falloir trouver un langage qui peut chercher rapidement dans une grosse BDD avec plusieurs caractéristiques qui se recoupent les unes les autres.
+                Le défi va être de passer, du langage utilisé par le contrôleur qui n’est pas adapté pour traiter beaucoup de données, à un langage en base de données qui a été conçu pour ce genre de calculs.
+                La recherche actuelle elle faite dans le contrôleur avec Entity Framework en .NET.
+                Ce langage n’étant pas très adapté pour gérer une grande quantité de données, ajouté à ceci de multiples appels à la BDD, expliquent pourquoi la requête prenait du temps.
+                Dans cette recherche, il y avait un appel à la base de données pour avoir la valeur de chaque champ utilisé dans les calculs ; cela était suivi de la série de calculs directement dans le contrôleur pour filtrer en fonction des champs.
+                Il pouvait donc y avoir un nombre d’appels indécent à la base de données suivi d’un calcul surdimensionné pour le langage.
+                L’objectif est donc de faire la requête dans un langage adapté avec le moins d’appels à la BDD possibles.
+                Le SQL est donc tout désigné car il a été conçu pour ça, en utilisant une Procédure Stockée.
+                Une Procédure Stockée est un concept utilisé en administration de base de données afin d’exécuter un ensemble d’instructions SQL.
+                Cela a pour avantage de ne passer qu’un seul appel à la Base par recherche.
+            </p>
+            <h3 class="heading-tertiary">III &ndash;La réalisation </h3>
+            <p class="popup__text">
+                Mon premier problème a été de comprendre le code et de me l’approprier car il y avait beaucoup d’extensions que je ne maitrisais pas.
+                Heureusement le temps et mon tuteur, Yakian, m’ont permis de le prendre en main et d’adapter la solution.
+                Ensuite, venait la création de la Procédure Stockée, j’ai beaucoup aimé cette partie car c’était la première fois que j’en faisais une de zéro.
+                J’en avais déjà modifiée mais jamais créée et devoir réfléchir à la structure et à l’optimisation fut un vrai plaisir.
+                Le dernier problème que j’ai eu était dû à la session.
+                Comme la recherche existait déjà, il y avait eu plusieurs développements qui venaient s’ajouter à la recherche.
+                Comme un export des données dans un Excel ou un envoi de sms aux personnes concernées.
+                Pas question d’avoir une régression et toutes les informations étaient contenues dans la session.
+                Il m’a fallu reprendre tous ces détails qui m’ont pris beaucoup de temps et alors que je croyais le projet terminé prêt pour la mise en préproduction il y avait toujours un bouton qui se rajoutait.
+            </p>
+            <h3 class="heading-tertiary">IV &ndash;Le résultat </h3>
+            <p class="popup__text">
+                J’ai beaucoup apprécié ce projet qui a été l’un des plus long et complet que j’ai eu à faire. 
+                La recherche est fonctionnelle et prends maximum 10 secondes. Les retours sont positifs et l’objectif a été atteint. 
+                J’ai beaucoup appris avec ce projet notamment sur le langage SQL de la base de données où j’ai pu constater la puissance de ce langage. 
+                J’ai aussi exercé la patience et le fait de travailler sur plusieurs projets en même temps car je devais attendre un retour d’information.
+                Je remercie Yakian qui m’aura aidé et accompagné tout le long de ce projet et qui m’aura apporté tant d’expertise sur mon métier.
             </p>
             <a href="#section-projects" class="button">Fermer</a>
         </div>
