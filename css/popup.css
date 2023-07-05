@@ -56,6 +56,10 @@ body {
     border-radius: 100px;
     margin-top: 25px;
 }
+.fermerPopup {
+    color: black;
+    margin-right: 10px !important;
+}
 
 .popup {
     height: 100vh;

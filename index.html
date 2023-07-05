@@ -76,47 +76,15 @@
                     <div class="section-header">
                         <h2 class="section-heading animated" data-animation="bounceInUp">Qui suis-je ?</h2>
                         <figure class="member-photo"><img data-0="width:155px;" data-300=" width:120px;" src="img/team/AymericVigoureux.jpg" style="width:100% ;"></figure>
-                        <p>Développeur full stack j'ai un diplome bac +5 en informatique passé à INTECH et j'ai travaillé 2 ans en alternance au Secours Populaire Français.'</p>
+                        <p>
+                            Bon vivant, j’aime passer du temps avec mes collègues et avoir une forte unité d’équipe que j’ai pu développer dans le scoutisme.
+                            Diplômé d’un bac+5 en ingénierie du logiciel, mon langage de prédilection est le C# même si je suis un développeur fullstack.
+                            Je développe à travers différents articles mes compétences techniques et humaines que vous pouvez lire plus bas.
+                            En dehors du travail, parmi mes passions, le travail du bois et la coutellerie y ont une grande part ; ils m'ont donné le goût de la recherche et du geste technique bien fait.
+                        </p>
                     </div>
                 </div>
             </div>
-
-            <!--<div class="row align-center mar-bot40">
-              <div class="col-md-3">
-                <div class="team-member">
-                  <div class="team-detail">
-                    <h4>Jason Doe</h4>
-                    <span>User experiences</span>
-                  </div>
-                </div>
-              </div>-->
-            <!--<div class="col-md-3">
-              <div class="team-member">
-                <figure class="member-photo"><img src="img/team/member2.jpg" alt=""></figure>
-                <div class="team-detail">
-                  <h4>Timothy Clark</h4>
-                  <span>Web developer</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="team-member">
-                <figure class="member-photo"><img src="img/team/member3.jpg" alt=""></figure>
-                <div class="team-detail">
-                  <h4>Vicky Tan</h4>
-                  <span>Web designer</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="team-member">
-                <figure class="member-photo"><img src="img/team/member4.jpg" alt=""></figure>
-                <div class="team-detail">
-                  <h4>Kevin Peterson</h4>
-                  <span>UI designer</span>
-                </div>
-              </div>
-            </div>-->
         </div>
     </section>
     <!-- /about -->
@@ -126,7 +94,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="align-center">
-                        <h2 class="color-white txt-shadow">Mes Projets</h2>
+                        <h2 class="color-white txt-shadow">Mes Réalisations</h2>
                         <div class="flexslider testimonials-slider">
                             <ul class="slides">
                                 <li>
@@ -179,7 +147,7 @@
                                         </h3>
                                         <h5>
                                             Ce projet de loterie a été mon premier projet mené au Secours populaire.
-                                            J'ai fait une loterie en ligne pour permetre aux Fédérations de tirer leurs lots en ligne et de pouvoir garder une trace pour l'état.
+                                            J'ai conçu une loterie en ligne pour permetre aux Fédérations Départemental de tirer leurs lots en ligne et de pouvoir garder une trace pour l'Etat.
                                         </h5>
                                         <br />
                                     </a>
@@ -194,8 +162,8 @@
     </section>
     <div class="popup" id="popupPopAmi">
         <div class="popup__content">
-            <h2 class="heading-secondary">PopAmi, la recherche avancé en sql</h2>
-            <h3 class="heading-tertiary">I &ndash;La problématiquee</h3>
+            <h2 class="heading-secondary">PopAmi, la recherche avancée en sql</h2>
+            <h3 class="heading-tertiary">I &ndash;La problématique</h3>
             <p class="popup__text">
                 Sur le site du Secours populaire Français (SPF), Atrium, la recherche avancée permet de retrouver tous les «amis », c’est à dire toute personne enregistrée sur la Base De Données (BDD) du SPF.
                 Mais cette recherche est lente et il lui arrive même de ne pas aboutir.
@@ -209,9 +177,9 @@
                 Cette recherche comporte plusieurs paramètres : des paramètres classiques comme nom, prénom, âge, etc mais aussi des paramètres plus poussés comme la recherche par ville ou par langue parlée.
                 La recherche a ainsi une vingtaine de champs qui peuvent se recouper lors du calcul.
                 Il va falloir trouver un langage qui peut chercher rapidement dans une grosse BDD avec plusieurs caractéristiques qui se recoupent les unes les autres.
-                Le défi va être de passer, du langage utilisé par le contrôleur qui n’est pas adapté pour traiter beaucoup de données, à un langage en base de données qui a été conçu pour ce genre de calculs.
-                La recherche actuelle elle faite dans le contrôleur avec Entity Framework en .NET.
-                Ce langage n’étant pas très adapté pour gérer une grande quantité de données, ajouté à ceci de multiples appels à la BDD, expliquent pourquoi la requête prenait du temps.
+                Le défi va être de passer du langage utilisé par le contrôleur, qui n’est pas adapté pour traiter beaucoup de données, à un langage en base de données qui a été conçu pour ce genre de calculs.
+                La recherche actuelle est faite dans le contrôleur avec Entity Framework en .NET.
+                Ce langage n’étant pas très adapté pour gérer une grande quantité de données, combiné à ceci de multiples appels à la BDD, expliquent pourquoi la requête prenait du temps.
                 Dans cette recherche, il y avait un appel à la base de données pour avoir la valeur de chaque champ utilisé dans les calculs ; cela était suivi de la série de calculs directement dans le contrôleur pour filtrer en fonction des champs.
                 Il pouvait donc y avoir un nombre d’appels indécent à la base de données suivi d’un calcul surdimensionné pour le langage.
                 L’objectif est donc de faire la requête dans un langage adapté avec le moins d’appels à la BDD possibles.
@@ -223,11 +191,12 @@
             <p class="popup__text">
                 Mon premier problème a été de comprendre le code et de me l’approprier car il y avait beaucoup d’extensions que je ne maitrisais pas.
                 Heureusement le temps et mon tuteur, Yakian, m’ont permis de le prendre en main et d’adapter la solution.
-                Ensuite, venait la création de la Procédure Stockée, j’ai beaucoup aimé cette partie car c’était la première fois que j’en faisais une de zéro.
-                J’en avais déjà modifiée mais jamais créée et devoir réfléchir à la structure et à l’optimisation fut un vrai plaisir.
-                Le dernier problème que j’ai eu était dû à la session.
-                Comme la recherche existait déjà, il y avait eu plusieurs développements qui venaient s’ajouter à la recherche.
-                Comme un export des données dans un Excel ou un envoi de sms aux personnes concernées.
+                Ensuite, venait la création de la Procédure Stockée.
+                J’ai beaucoup aimé cette partie car c’était la première fois que j’en faisais une de zéro.
+                J’en avais déjà modifiée mais jamais créée et devoir réfléchir à la structure et à l’optimisation fut un vrai plaisir car j'aime bien ce genre de jeux mental.
+                Le dernier problème que j’ai rencontré était dû à la session.
+                Comme la recherche existait déjà, il y avait eu plusieurs développements qui venaient s’ajouter à la recherche,
+                comme un export des données dans un Excel ou un envoi de sms aux personnes concernées.
                 Pas question d’avoir une régression et toutes les informations étaient contenues dans la session.
                 Il m’a fallu reprendre tous ces détails qui m’ont pris beaucoup de temps et alors que je croyais le projet terminé prêt pour la mise en préproduction il y avait toujours un bouton qui se rajoutait.
             </p>
@@ -242,15 +211,15 @@
             <a href="#section-projects" class="button">Fermer</a>
         </div>
     </div>
-    <div class="popup" id="popupPopColecte">
+    <div class="popup" id="popupPopCollecte">
         <div class="popup__content">
             <h2 class="heading-secondary">
                 Présentation du projet de la Loterie du Secours populaire don’action
             </h2>
             <h3 class="heading-tertiary">I &ndash; Problématique de départ et enjeux</h3>
             <p class="popup__text">
-                La loterie du Secours populaire est un véritable évènement annuel.
-                Nous sommes confrontés à une difficulté car les tickets commencent à être numérisés et il n'éxiste aucun service informatique pour la loterie.
+                La loterie du Secours populaire est un véritable évènement annuel au sien de l'association.
+                La DSI est confrontés à une difficulté car les tickets commencent à être numérisés et il n'éxiste aucun service informatique pour la loterie.
                 Les missions locales ont déjà commencé à vendre des tickets pour faire le tirage au sort mais le prestataire n’a pas développé d’application.
                 Il faut vite en créer une !
                 Ce projet est l’occasion pour moi de me familiariser avec les technologies du SPF (Secours Populaire Français) tout en étant suivi par mon maitre d’alternance.
@@ -261,13 +230,14 @@
             </h3>
             <p class="popup__text">
                 Je commence par une étude de projet avec un livrable pour bien comprendre les enjeux et les besoins.
+                Je propose une solution et j'attends un retour sur ce qui va et ce qu'il faut modifier.
                 Le but est de proposer un outil qui soit fonctionnel et esthétique.
                 Les technologies me sont imposées car ce sont celles utilisées par le SPF.
                 C’est une technologie MVC (Model Vue Contrôleur) avec pour le contrôleur du C#, pour la base de données du SQL et pour le côté client du HTML, JS et CSS.
                 Une fois l’avant-projet validé, je commence le prototype en partant de zéro.
                 Cela me permet de comprendre l’architecture, de proposer une première maquette du projet et une structure de base établie.
                 Cette étape est très importante car par la suite elle me permettra de naviguer plus facilement sur la solution du SPF.
-                Actuellement, il est possible de lancer le tirage au sort et de célébrer un vainqueur même s’il n’y a pour le moment qu’un seul chiffre gagnant.
+                à l'époque, il est possible de lancer le tirage au sort et de célébrer un vainqueur même s’il n’y a pour le moment qu’un seul chiffre gagnant.
                 Le prototype est validé et passe en production.
             </p>
             <h3 class="heading-tertiary">
@@ -275,9 +245,10 @@
             </h3>
             <p class="popup__text">
                 Les difficultés commencent car la plateforme du SPF est complexe… un vrai labyrinthe !
+                Effectivement, j'ai juste eu des petits projets d'école avant et là, pour la première fois, je dois travailler sur un logiciel qui a plus de 10 ans.
                 Heureusement, Yakian, mon tuteur, est là pour m’expliquer la structure du progiciel SPF et m’orienter.
                 Je commence ainsi à intégrer mon projet sur la plateforme et à développer des fonctionnalités supplémentaires comme un drag & drop pour échanger des lots.
-                La tention est palpable car le rendu approche et même si l’application est fonctionnelle, il reste des bugs;
+                La tentions est palpable car le rendu approche et même si l’application est fonctionnelle, il reste des bugs;
                 je n’ai toujours pas la structure des tickets alors que je dois mettre en place un Reporting Services pour importer la liste des tickets de la base de données dans un Excel.
                 L’administration valide la structure finale des tickets et le travail étant déjà anticipé, l’intégration se fait rapidement.
                 La phase finale commence !
@@ -305,7 +276,7 @@
                 <div class="col-lg-4">
                     <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
                         <div class="float-left mar-right20">
-                            <a href="#" class="hi-icon hi-icon-pencil">pencil</a>
+                            <a href="#popupC#" class="hi-icon hi-icon-pencil">pencil</a>
                         </div>
                     </div>
                     <h3 class="text-bold">ASP.NET</h3>
@@ -317,7 +288,7 @@
                 <div class="col-lg-4">
                     <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
                         <div class="float-left mar-right20">
-                            <a href="#" class="hi-icon hi-icon-list">list</a>
+                            <a href="#popupC#" class="hi-icon hi-icon-list">list</a>
                         </div>
                     </div>
                     <h3 class="text-bold">C# &ndash; MVC</h3>
@@ -329,7 +300,7 @@
                 <div class="col-lg-4">
                     <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
                         <div class="float-left mar-right20">
-                            <a href="#" class="hi-icon hi-icon-archive">archive</a>
+                            <a href="#popupSQL" class="hi-icon hi-icon-archive">archive</a>
                         </div>
                     </div>
                     <h3 class="text-bold">SQL</h3>
@@ -343,7 +314,7 @@
                 <div class="col-lg-4">
                     <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
                         <div class="float-left mar-right20">
-                            <a href="#" class="hi-icon hi-icon-screen">screen</a>
+                            <a href="#popupFrontend" class="hi-icon hi-icon-screen">screen</a>
                         </div>
                     </div>
                     <h3 class="text-bold">HTML</h3>
@@ -355,7 +326,7 @@
                 <div class="col-lg-4">
                     <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
                         <div class="float-left mar-right20">
-                            <a href="#" class="hi-icon hi-icon-refresh">refresh</a>
+                            <a href="#popupFrontend" class="hi-icon hi-icon-refresh">refresh</a>
                         </div>
                     </div>
                     <h3 class="text-bold">Java Script</h3>
@@ -367,7 +338,7 @@
                 <div class="col-lg-4">
                     <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
                         <div class="float-left mar-right20">
-                            <a href="#" class="hi-icon hi-icon-images">images</a>
+                            <a href="#popupFrontend" class="hi-icon hi-icon-images">images</a>
                         </div>
                     </div>
                     <h3 class="text-bold">CSS</h3>
@@ -379,6 +350,152 @@
             </div>
         </div>
     </section>
+
+    <div class="popup" id="popupFrontend">
+        <div class="popup__content">
+            <h2 class="heading-secondary">
+                Mes technologies de frontend
+            </h2>
+            <h3 class="heading-tertiary">I &ndash; Introduction</h3>
+            <p class="popup__text">
+                Dans les technologies du front, j’utilise les trois langages classiques JavaScript(JS), HTML et CSS.
+                Le HTML est employé pour la structure, le CSS pour la forme et le JS pour le dynamisme.
+                Je suis amené à les utiliser dans mon travail ce qui m’a permis de découvrir une certaine complexité notamment dans le HTML avec le layout et les sections.
+            </p>
+            <h3 class="heading-tertiary">
+                II &ndash; Le JavaScript
+            </h3>
+            <p class="popup__text">
+                Le JS est le langage que j’ai le plus approfondi en faisant un démineur avec le DOM (Document Object Model).
+                Intéressant à manipuler, il faut faire attention à garder un code clair et compréhensible.
+                J’en comprends l'intérêt mais j’en vois aussi les limites.
+                Le JS a été développé dès le début du web sur des bases peu solides, il a des problèmes dans le coeur même de son développement ; il est devenu incontournable car utilisé dans beaucoup de sites web, c’est pourquoi d’autres langages se sont greffés dessus pour contrecarrer ses déficiences notamment le TypeScipt (TS) avec lequel j’ai un peu travaillé.
+                Au début de mon alternance j’avais des difficultés à bien faire la différence entre les programmes dans le contrôleur(côté serveur) et les programmes en JS.
+                Mais à force de travail, la limite s’est maintenant clarifiée.
+            </p>
+            <h3 class="heading-tertiary">
+                III &ndash; Les extensions pour le front
+            </h3>
+            <p class="popup__text">
+                J’ai aussi été amené à utiliser des extensions pour le front tel que Telerik qui permet d’avoir des modules plus élégants et adaptés à nos besoins.
+                Ceci vient en complément des trois autres langages et, une fois maîtrisé,il apporte beaucoup de simplicité.
+                C'était une bonne expérience d'apprendre à l'utiliser car par la suite je serai amené à rencontrer d'autres technologies pour le frontend.
+            </p>
+            <h3 class="heading-tertiary">
+                IV &ndash; Conclusion
+            </h3>
+            <p class="popup__text">
+                Mon expertise dans ces différents langages viendra avec l'expérience et le travail et j’aime prendre le temps d’apprendre de nouvelles fonctionnalités au fur et à mesure des projets.
+                Je pense que dans ces langages le plus important est la veille technologique car ce sont des langages qui évoluent très vite avec de plus en plus de complexité.
+                Je vise donc à m'adapter en fonction des besoins de mon métier tout en essayant de garder une vision plus globale.
+            </p>
+            <a href="#section-compTech" class="button">Fermer</a>
+        </div>
+    </div>
+
+    <div class="popup" id="popupC#">
+        <div class="popup__content">
+            <h2 class="heading-secondary">
+                Mon langage de prédilection : C#
+            </h2>
+            <h3 class="heading-tertiary">I &ndash; Introduction</h3>
+            <p class="popup__text">
+                Le langage avec lequel j’ai appris à coder et que j’ai le plus utilisé est le C#.
+                Je développe actuellement en .NET core qui est une plateforme de développement qui utilise le C# comme langage de programmation.
+                Dans mon alternance, je l’utilise avec une structure MVC que je détaille plus tard.
+            </p>
+            <h3 class="heading-tertiary">
+                II &ndash; Mes premiers pas
+            </h3>
+            <p class="popup__text">
+                J’ai commencé par utiliser les C# dans des projets étudiants tel que “Last Spaceshipe Destroyer” où j’ai découvert les principes de la POO (Programmation Orientée Objet).
+                Cela m’a permis de comprendre les principes de classe et d’héritage qui sont des principes fondateurs des projets dans lesquels je travaille.
+            </p>
+            <h3 class="heading-tertiary">
+                III &ndash; Dans mon alternance
+            </h3>
+            <p class="popup__text">
+                Effectivement, dans mon alternance je développe avec une architecture MVC (Model, View, Controller) où le modèle utilise le principe des classes.
+                La View c’est ce que le client voit dans une page web, le Contrôler c’est le backend de l’application qui est sur le serveur et auquel les clients n’ont pas accès et le Model c’est la structure de la base de données qui est représenté sous forme de classe sur le controller.
+                Lorsque j’ai commencé à coder au Secours populaire, c’est avec le C# que j’ai tout de suite adhéré et qui m’a permis de plus facilement rentrer dans les autres environnements qui lui était liés, tels que la BDD ou le Frontend.
+            </p>
+            <h3 class="heading-tertiary">
+                IV &ndash; Le C# a t-il un avenir?
+            </h3>
+            <p class="popup__text">
+                Je pense que toutes les technologies évoquées ont un avenir car elles sont puissantes et mises en open source par Microsoft qui les entretient avec un financement à la hauteur des enjeux.
+                Cela permet un accès simple pour les études et l'apprentissage, ainsi les jeunes professionnels l’utiliseront sûrment par la suite.
+                C'est aussi un langage très utilisé aujourd'hui qui permet beaucoup de perspective de travail.
+            </p>
+            <a href="#section-compTech" class="button">Fermer</a>
+        </div>
+    </div>
+
+    <div class="popup" id="popupSQL">
+        <div class="popup__content">
+            <a href="#section-compTech" class="">X</a>
+
+            <h2 class="heading-secondary">
+                Le langage SQL
+            </h2>
+            <h3 class="heading-tertiary">I &ndash; Introduction</h3>
+            <p class="popup__text">
+                Le SQL est un langage informatique utilisé en administration de base de données (BDD).
+                Ce langage a été conçu pour brasser de grandes quantités de données.
+                Effectivement une BDD est faite pour stocker des informations et souvent dans des dimensions astronomiques.
+                Il est donc essentiel que le langage puisse traiter les données efficacement.
+            </p>
+            <h3 class="heading-tertiary">
+                II &ndash; L'importance du SQL
+            </h3>
+            <p class="popup__text">
+                Débutant dans l’utilisation du SQL, j’en comprends son importance et réalise sa puissance.
+                Un des points que je trouve le plus intéressant avec une BDD, c’est l’analyse en profondeur du logiciel.
+                Lorsque l’on arrive dans un nouvel environnement, c’est en regardant la BDD qu'on a un aperçu général de l’application et des liens qui lient les différentes parties.
+                Pour comprendre le fonctionnement d’une application, je commence par regarder la BDD car elle en est le squelette.
+            </p>
+            <h3 class="heading-tertiary">
+                III &ndash; Comment fonctionne le SQL?
+            </h3>
+            <p class="popup__text">
+                Pour résumer simplement une structure de base des BDD, il faut commencer par comprendre ce qu'est une table.
+                Une table, c’est un tableau avec différents paramètres dont le premier est une clé primaire, c'est-à-dire un identifiant unique dans le tableau qui permet de retrouver l’élément.
+                La table est la base de la structure car la BDD est constituée de multiples tables qui interagissent les unes avec les autres.
+            </p>
+            <p>
+                Le SQL est un langage qui permet de créer tous ces éléments et d'interagir avec les tables.
+                J’ai commencé à apprendre les bases en cours avec les trois commandes les plus communes : create, update & delete.
+                C’est ainsi, avec des projets étudiants, que j’ai créé mes premières BDD.
+            </p>
+            <h3 class="heading-tertiary">
+                IV &ndash; Mon expérience professionnelle du SQL
+            </h3>
+            <p class="popup__text">
+                J’ai vraiment compris l’importance du langage avec mon alternance.
+                Il y avait déjà une BDD datant de plus de 10 ans.
+                Je me suis senti assez impuisant la première fois que je l’ai vue car sa complexité m’a complètement perdu.
+                Au fur et à mesure j’ai appris à la dompter et à rentrer dans des codes plus complexes comme des Procédures Stockées ou encore avec une Trace Profiler.
+            </p>
+            <p>
+                Une Procédure Stockée est un concept utilisé en administration de base de données qui permet d’exécuter un ensemble d’instructions SQL.
+                C’est de cette manière là que j’ai appris à lier des tables avec les commandes left join et crost join.
+                Je vous invite à aller voir mon projet ” PopAmi, la recherche avancée en SQL” où ce procédé est au centre.
+            </p>
+            <p>
+                Une Trace Profiler permet de suivre l’historique des dernières requêtes.
+                Très pratique pour remonter une erreur et déboguer un code.
+                Je l’utilise régulièrement et je l’ai notamment utilisé pour les deux projets dont je parle précédemment: “PopAmi la recherche avancée en SQL” et “PopCollect, une loterie en ligne”.
+                Notamment pour PopAmi dont la recherche existait déjà et pour lequel j’ai dû comprendre les appels fait à la bdd mais aussi, plus tard, déboguer le code.
+            </p>
+            <h3 class="heading-tertiary">
+                V &ndash; Conclusion
+            </h3>
+            <p>
+                Utiliser ce langage est important dans mon métier car il me permet de naviguer dans la bdd qui est le squelette des applications sur lesquelles je travaille.
+            </p>
+            <a href="#section-compTech" class="button">Fermer</a>
+        </div>
+    </div>
 
     <!-- spacer section:stats -->
     <section id="parallax1" class="section appear clearfix" data-stellar-background-ratio="0.5">
@@ -421,7 +538,7 @@
                         <div class="icon">
                             <a id="honnetete" href="#popupHonnetete" class="fa fa-bell-o fa-5x"></a>
                         </div>
-                        <span for="honnetete" class="text">Honnêteté</span>
+                        <span for="honnetete" class="text">Intégrité</span>
                         <!--<strong id="counter-heart" class="number">478</strong><br>-->
                     </div>
                 </div>
@@ -440,7 +557,7 @@
             <h3 class="heading-tertiary">II &ndash; En quoi cette qualité est-elle importante en entreprise ?</h3>
             <p class="popup__text">
                 Une équipe unie, c’est le gage de moments de qualité entre collègues, ce qui permet un plus grand rapprochement et davantage de communication.
-                En comprenant la manière de faire de chacun, on arrive à une belle homogénéité et donc une plus grande efficacité dans le travail d’équipe.
+                En comprenant la manière de faire de chacun, on arrive à une belle cohésion et donc une plus grande efficacité dans le travail d’équipe.
                 C’est une compétence bénéfique tant pour la vie de l’équipe que pour la réalisation du travail.
             </p>
             <h3 class="heading-tertiary">III &ndash; Deux exemples pour illustrer cette qualité</h3>
@@ -467,33 +584,33 @@
             </h2>
             <h3 class="heading-tertiary">I &ndash; Comment être à l'écoute ?</h3>
             <p class="popup__text">
-                Selon moi, être à l’écoute c’est savoir prendre le temps lorsqu'une autre personne parle. 
-                S’arrêter et l'écouter jusqu’à ce qu'elle finisse de parler sans réfléchir à  la réponse que je vais lui donner. 
-                C’est difficile de se concentrer seulement sur les paroles de la personne. 
-                C’est parfois encore plus compliqué de s’arrêter dans son activité ; et pourtant, c’est tellement important que les autres sachent qu’ils peuvent passer quand ils en ont besoin.
+                Selon moi, être à l’écoute c’est savoir prendre le temps lorsqu'une autre personne parle.
+                S’arrêter et l'écouter jusqu’à ce qu'elle finisse de parler sans réfléchir à  la réponse que je vais lui donner.
+                C’est difficile de se concentrer seulement sur les paroles de la personne.
+                C’est parfois encore plus compliqué de s’arrêter dans son activité ; et pourtant, c’est tellement important que les autres sachent qu’ils peuvent passer et être accueilli quand ils en ont besoin.
             </p>
             <h3 class="heading-tertiary">II &ndash; En quoi cette qualité est-elle importante en entreprise ?</h3>
             <p class="popup__text">
-                Cette compétence est recherchée dans les milieux professionnels car elle permet d’avoir une meilleure compréhension des personnes qui nous entourent et des relations qui unissent l’équipe. 
+                Cette compétence est recherchée dans les milieux professionnels car elle permet d’avoir une meilleure compréhension des personnes qui nous entourent et des relations qui unissent l’équipe.
                 C’est aussi une clé pour résoudre de manière pacifiste des conflits au sein d’une équipe car beaucoup de tensions commencent sur un manque de communication.
             </p>
             <h3 class="heading-tertiary">III &ndash; Deux exemples pour illustrer cette qualité</h3>
             <p class="popup__text">
-                Par exemple, j’ai proposé d’aller au restaurant avec mes collègues plutôt que de déjeuner dans nos bureaux. 
-                Et lors de ces moments, différents sujets de tension avec la hiérarchie ont émergé. 
-                Pouvoir échanger ainsi ensemble sur un point de désaccord a plusieurs fois permis de désamorcer la tension et d’aborder le problème avec un nouveau regard. 
+                Par exemple, j’ai proposé d’aller au restaurant avec mes collègues plutôt que de déjeuner dans nos bureaux.
+                Et lors de ces moments, différents sujets de tension avec la hiérarchie ont émergé.
+                Pouvoir échanger ainsi ensemble sur un point de désaccord a plusieurs fois permis de désamorcer la tension et d’aborder le problème avec un nouveau regard.
                 En mettant des mots sur leur ressenti, la parole s’est libérée et ils ont pu en discuter avec les personnes concernées de manière calme et constructive.
             </p>
             <p class="popup__text">
-                Une autre situation un peu particulière s’est présentée qui a été désamorcée par le jeu ; en effet,  un des alternants du Secours populaire avait tendance à être souvent absent. 
-                Or à mon arrivée, j’ai proposé à ceux qui le souhaitaient, de faire un jeu de cartes ou de société le midi. 
-                Cela a permis  de détendre les liens tendus qui existaient avec cet alternant et par la suite, de comprendre que ses absences venaient  de soucis familiaux importants. 
+                Une autre situation un peu particulière s’est présentée qui a été désamorcée par le jeu ; en effet,  un des alternants du Secours populaire avait tendance à être souvent absent.
+                Or à mon arrivée, j’ai proposé à ceux qui le souhaitaient, de faire un jeu de cartes ou de société le midi.
+                Cela a permis  de détendre les liens tendus qui existaient avec cet alternant et par la suite, de comprendre que ses absences venaient  de soucis familiaux importants.
                 On a pu mieux comprendre sa situation et l’aider.
             </p>
             <h3 class="heading-tertiary">IV &ndash; Ce qu'il faut en retenir</h3>
             <p class="popup__text">
-                Être à l’écoute est une ouverture permanente où il faut savoir rester attentif à chacun et ouvert à tous. 
-                C’est très important dans une équipe pour que chaque équipier se sente à sa place. 
+                Être à l’écoute est une ouverture permanente où il faut savoir rester attentif à chacun et ouvert à tous.
+                C’est très important dans une équipe pour que chaque équipier se sente à sa place.
                 D’après mon expérience, la vraie écoute de l’autre permet de construire une équipe soudée et dynamique.
             </p>
             <a href="#parallax1" class="button">Fermer</a>
@@ -504,21 +621,21 @@
             <h2 class="heading-secondary">Etre Prévenant</h2>
             <h3 class="heading-tertiary">I &ndash; C'est quoi une personne prévenante ?</h3>
             <p class="popup__text">
-                Selon moi, une personne prévenante, c’est quelqu’un d’attentionné qui veille à devancer les désirs d'autrui. 
+                Selon moi, une personne prévenante, c’est quelqu’un d’attentionné qui veille à devancer les désirs d'autrui.
                 Il est important d’être attentif à son entourage et d'apprendre à le connaître pour, le moment venu, lui faire ce geste bienveillant.
             </p>
             <h3 class="heading-tertiary">II &ndash; En quoi cette qualité est-elle importante ?</h3>
             <p class="popup__text">
-                C’est une attention quotidienne qui montre à la personne qu’on a pensé à elle. 
-                Cela nous engage à être à l’écoute pour veiller sur son entourage et déposer des petites intentions dans leur journée. 
+                C’est une attention quotidienne qui montre à la personne qu’on a pensé à elle.
+                Cela nous engage à être à l’écoute pour veiller sur son entourage et déposer des petites intentions dans leur journée.
                 C’est exigeant car cela exige de vivre les moments présents pour les partager avec les autres et ainsi apprendre à mieux les connaître.
                 \n Etre prévenant, c’est être vigilant aux autres et à leurs besoins afin d’améliorer les liens entre collègues et faciliter par là-même le travail et l’ambiance du service.
             </p>
             <h3 class="heading-tertiary">III &ndash; Un exemple pour illustrer cette qualité</h3>
             <p class="popup__text">
                 Un collègue avait tendance à se mettre en retrait et ne semblait pas aller très bien.
-                Du même coup, il était difficile de communiquer et de travailler avec lui ; c’était un vrai problème pour plusieurs de ses collègues. 
-                Voyant cela, je lui ai proposé de rejoindre notre groupe de jeu sur l’heure de déjeuner. 
+                Du même coup, il était difficile de communiquer et de travailler avec lui ; c’était un vrai problème pour plusieurs de ses collègues.
+                Voyant cela, je lui ai proposé de rejoindre notre groupe de jeu sur l’heure de déjeuner.
                 Cela a permis de briser la glace avec lui et de rétablir peu à peu le dialogue.
             </p>
             <h3 class="heading-tertiary">IV &ndash; Ce qu'il faut en retenir</h3>
@@ -531,38 +648,39 @@
     </div>
     <div class="popup" id="popupHonnetete">
         <div class="popup__content">
-            <h2 class="heading-secondary">Honnêteté </h2>
-            <h3 class="heading-tertiary">I &ndash; C'est quoi l'honnêteté ?</h3>
+            <h2 class="heading-secondary">Intégrité </h2>
+            <h3 class="heading-tertiary">I &ndash; C'est quoi l'intégrité ?</h3>
             <p class="popup__text">
-                Selon moi l’honnêteté s’exprime à travers les paroles et les actes. 
-                Les paroles, en étant toujours sincère et me taisant plutôt que de dire un mensonge. 
-                Et les actes, en essayant d’agir de manière juste et bonne. 
-                Cela s’exprime dans différents domaines : dans mes relations, dans mon rapport à l’argent, dans mon rapport à moi-même et à mes principes, etc. 
-                Par exemple, j’essaie de toujours payer le juste prix sans profiter d’autrui. 
-                Également, de ne pas abuser de la confiance des autres en me permettant de profiter d’avantages professionnels à des profits personnels.
+                Selon moi l’intégrité s’exprime à travers les paroles et les actes.
+                Les paroles, en étant toujours sincère et me taisant plutôt que de dire un mensonge.
+                Et les actes, en essayant d’agir de manière juste et bonne.
+                Cela s’exprime dans différents domaines : dans mes relations, dans mon rapport à l’argent, dans mon rapport à moi-même et à mes principes, etc.
+                Par exemple, j’essaie de toujours payer le juste prix sans profiter d’autrui.
+                Également, de ne pas abuser de la confiance des autres en profitant d’avantages professionnels mon profit personnel.
             </p>
             <h3 class="heading-tertiary">II &ndash; Quelle est l'importance de cette vertu?</h3>
             <p class="popup__text">
-                L’honnêteté est une vertu qui se travaille tous les jours et qui est essentielle si l’on veut être cohérent dans sa vie. 
-                Il y a deux hommes qui m’ont beaucoup inspiré dans cette vertu; c’est mon père qui cherche la cohérence entre ses paroles et ses actes, et mon tuteur d’alternance qui cherche la juste répartition des droits et des responsabilités.
+                L’intégrité est une vertu qui se travaille tous les jours et qui est essentielle si l’on veut être cohérent dans sa vie.
+                Il y a deux hommes qui m’ont beaucoup inspiré dans la valorisation de cette vertu.
+                C’est mon père qui cherche la cohérence entre ses paroles et ses actes, et mon tuteur d’alternance qui cherche la juste répartition des droits et des responsabilités.
             </p>
             <h3 class="heading-tertiary">III &ndash; Deux exemples pour illustrer cette vertu</h3>
             <p class="popup__text">
                 Un exemple que je trouve parlant concernant la droiture de mon père : il avait droit, par son travail, à un boîtier de paiement avec abonnement pour les télépéages.
-                Ses collègues l’utilisaient régulièrement à des fins personnelles, ce que mon père considérait comme un abus de confiance. 
-                Un jour, mes frères et moi avions emprunté la voiture, et nous nous sommes trompés de boîtier : nous avons utilisé celui de l’entreprise au lieu de celui de la famille. 
+                Ses collègues l’utilisaient régulièrement à des fins personnelles, ce que mon père considérait comme un abus de confiance.
+                Un jour, mes frères et moi avions emprunté la voiture, et nous nous sommes trompés de boîtier : nous avons utilisé celui de l’entreprise au lieu de celui de la famille.
                 Apprenant cela, mon père a entamé des démarches auprès de son entreprise pour rembourser le ticket ainsi facturé.
             </p>
             <p class="popup__text">
-                Un autre épisode m’a appris l’honnêteté dans mon travail : je travaillais sur mon poste et, pour certains tests, il me fallait demander des droits à mon tuteur. 
-                Je lui proposai de me donner l’accès “super-admin” sur ma machine pour ne plus le déranger avec ces problèmes à l’avenir. 
-                Il me reprit gentiment : s’il faisait cela, j’aurais pu avoir accès à des zones sensibles du code, et j’aurais pu être tenu responsable en cas de fuite d’informations. 
-                Il ne voulait pas m’imposer cette responsabilité, quitte à prendre un peu plus de temps. 
-                Cet évènement a été doublement bénéfique : en plus de me donner une leçon d’honnêteté, il m’aura rendu plus attentif à la gestion des droits, et vigilant à ce qu’ils correspondent à mon corps de métier.
+                Un autre épisode m’a appris l’intégrité dans mon travail : je travaillais sur mon poste et, pour certains tests, il me fallait demander des droits à mon tuteur.
+                Je lui proposai de me donner l’accès “super-admin” sur ma machine pour ne plus le déranger avec ces problèmes à l’avenir.
+                Il me reprit gentiment : s’il faisait cela, j’aurais pu avoir accès à des zones sensibles du code, et j’aurais pu être tenu responsable en cas de fuite d’informations.
+                Il ne voulait pas m’imposer cette responsabilité, quitte à prendre un peu plus de temps.
+                Cet évènement a été doublement bénéfique : en plus de me donner une leçon d’intégrité, il m’aura rendu plus attentif à la gestion des droits, et vigilant à ce qu’ils correspondent à mon corps de métier.
             </p>
             <h3 class="heading-tertiary">IV &ndash; Ce qu'il faut en retenir</h3>
             <p class="popup__text">
-                L’honnêteté est nécessaire au bon fonctionnement d’une équipe : elle est la fondation durable qui permet de créer des relations de confiance entre collègues ; elle assure aussi une certaine exigence de travail bien fait.
+                L’intégrité est nécessaire au bon fonctionnement d’une équipe : elle est la fondation durable qui permet de créer des relations de confiance entre collègues ; elle assure aussi une certaine exigence de travail bien fait.
             </p>
             <a href="#parallax1" class="button">Fermer</a>
         </div>
@@ -915,10 +1033,6 @@
                     <br />
                     <p>Aymeric Vigoureux</p>
                     <p>Développeur fullstack</p>
-                    <br />
-                    <a href="tel:0782405979" itemprop="telephone">07.82.40.59.79</a>
-                    <br />
-                    <a href="vigoureux@et.intechinfo.fr" itemprop="email">vigoureux@et.intechinfo.fr</a>
                 </div>
             </div>
 
